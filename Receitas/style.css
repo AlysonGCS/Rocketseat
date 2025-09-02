@@ -1,3 +1,19 @@
+
+body{
+    background-image: url(assets/Página\ de\ receita.jpg);
+    background-color: #573824;
+    background-size: cover;
+}
+
+#page{
+    box-sizing: border-box;
+    background-color: #F0E8C2;
+    width: 800px;
+    padding: 24px;
+    border-radius: 24px;
+    margin: 48px auto;
+}
+
 img{
     border-radius: 16px;
 }
