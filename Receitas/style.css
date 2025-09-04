@@ -1,4 +1,6 @@
-
+:root{
+    font-family: "Alice", serif;
+}
 body{
     background-image: url(assets/Página\ de\ receita.jpg);
     background-color: #573824;
