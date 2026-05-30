@@ -1,0 +1,15 @@
+.grid{
+    display: grid;
+}
+
+.grid-flow-col{
+    grid-auto-flow: column;
+}
+
+.grid-flow-col2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap16{
+    gap: 16px;
+}
