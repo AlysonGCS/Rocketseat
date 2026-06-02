@@ -1,3 +1,25 @@
+section header {
+    padding-block: 12px 24px;
+    font: var(--text-span);
+    border-top: 1px solid var(--stroke-color);
+
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+
+        span{
+            background-image: url(../assets/Icons/ArrowRight.svg);
+            width: 16px;
+            height: 16px; 
+            background-repeat: no-repeat;
+            background-position: center;     
+        }
+        &:hover span{
+            background-image: url(../assets/Icons/ArrowRightHover.svg);
+        }
+    }
+}
 #featured{
     margin-top: 40px;
     img{
@@ -35,3 +57,28 @@
         }
     }
 }
+
+#weekly{
+    img{
+        height: 160px;
+    }
+    
+    figure{
+        position: relative;
+
+        .content-tag{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        p{
+            margin-top: 8px;
+            font-weight: 800;
+        }
+    }
+    
+    &>div{
+        grid-template-columns: repeat(4, 292px);
+    }    
+}
+

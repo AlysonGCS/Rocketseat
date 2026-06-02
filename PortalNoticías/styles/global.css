@@ -27,6 +27,11 @@ body{
     font: var(--text);
 }
 
+main{
+    margin-top: 40px;
+    gap: 80px;
+}
+
 a{
     text-decoration: none;
     color: inherit;
