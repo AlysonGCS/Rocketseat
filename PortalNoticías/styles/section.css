@@ -21,6 +21,7 @@ section header {
     }
 }
 #featured{
+    grid-area: featured;
     margin-top: 40px;
     img{
         height: 100%;
@@ -59,6 +60,7 @@ section header {
 }
 
 #weekly{
+    grid-area: weekly;
     img{
         height: 160px;
     }
@@ -82,3 +84,24 @@ section header {
     }    
 }
 
+#ai {
+    grid: ai;
+    img{
+        width: 176px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+    h3{
+        margin-block: 8px 4px;
+    }
+}
+
+#more{
+    grid-area: aside;
+    img{
+        width: 72px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+    margin-top: 32px;
+}

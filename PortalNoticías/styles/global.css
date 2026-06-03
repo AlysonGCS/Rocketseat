@@ -29,7 +29,14 @@ body{
 
 main{
     margin-top: 40px;
-    gap: 80px;
+    row-gap: 80px;
+    column-gap: 32px;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    grid-template-areas: 
+    "featured featured"
+    "weekly weekly"
+    "ai aside";
 }
 
 a{
