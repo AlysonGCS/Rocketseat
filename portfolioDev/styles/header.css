@@ -1,0 +1,37 @@
+#back-intro{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(../assets/images/Background_Intro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 120px;
+}
+#block{
+    width: 1040px;
+    height: 447px;
+    justify-self: center;
+}
+#about{
+    justify-self: center;
+    align-items: center;
+    width: 680px;
+    img{
+        width: 87px;
+        height: 87px;
+        object-fit: cover;
+        border-radius: 999px;
+        border: 2px solid var(--red);
+        padding: 4.36px;
+    }
+    h1{
+        padding-block: 8px 20px;
+    }
+    strong{
+        margin-top: 56px;
+    }
+}
+
+#nome{
+    color: var(--red);
+}

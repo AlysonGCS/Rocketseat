@@ -1,0 +1,42 @@
+.title-lg{
+    font: var(--h1);
+    color: var(--gray-100);
+}
+
+.title-md{
+    font: var(--h2);
+}
+
+.title-sm{
+    font: var(--h3);
+}
+
+.subtitile{
+    font: var(--text-sub);
+    color: var(--gray-200);
+}
+
+.text-md{
+    font: var(--text-md);
+}
+
+.text-sm{
+    font: var(--text-sm);
+    color: var(--gray-300);
+}
+
+.gap-24{
+    gap: 24px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-flow-rows{
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
