@@ -35,3 +35,35 @@
 #nome{
     color: var(--red);
 }
+
+#tech{
+    margin-top: 80px;
+    justify-items: center;
+    align-items: center;
+    img{
+        width: 24px;
+        height: 24px;
+    }
+    li{
+        list-style: none;        
+        padding: 9px 16px;
+        background-color: var(--gray-400);
+        border-radius: 999px;
+    }
+    a{
+        text-decoration: none;
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        span{            
+            color: var(--gray-200);
+        }
+    }
+
+}
+
+#arrowBottom{
+    margin-top: 94px;
+    justify-content: center;
+}
+
