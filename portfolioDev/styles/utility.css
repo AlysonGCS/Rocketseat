@@ -9,6 +9,7 @@
 
 .title-sm{
     font: var(--h3);
+    color: var(--gray-100);
 }
 
 .subtitile{
@@ -22,7 +23,7 @@
 
 .text-sm{
     font: var(--text-sm);
-    color: var(--gray-300);
+    color: var(--gray-200);
 }
 
 .gap-24{
@@ -43,4 +44,12 @@
 
 .grid {
     display: grid;
+}
+
+.grid-flow-column{
+    grid-auto-flow: column ;    
+}
+
+.text-Red{
+    color: var(--red);
 }
