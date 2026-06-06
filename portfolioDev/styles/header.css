@@ -32,6 +32,10 @@ header{
     }
 }
 
+#bio{
+    color: var(--gray-200);
+}
+
 #nome{
     color: var(--red);
 }
