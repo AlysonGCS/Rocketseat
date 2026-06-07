@@ -1,0 +1,90 @@
+footer {
+    width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/images/Background_Contacts.png);
+    justify-items: center;
+    padding-block: 128px 200px;
+
+    strong {
+        color: var(--purple);
+    }
+}
+
+#hudContacts {
+    gap: 8px;
+
+    h2 {
+        align-self: center;
+    }
+
+    margin-bottom: 48px;
+}
+
+#contacts {
+    gap: 12px;
+}
+
+.cardContact {
+    background-color: var(--gray-400);
+    padding: 20px;
+    width: 400px;
+
+    a {
+        grid-template-columns: 28px 288px 20px;
+        gap: 12px;
+        text-decoration: none;
+    }
+    border-radius: 8px;
+
+    &:hover{
+        border: 2px solid var(--blue);
+    }
+}
+
+.logo{
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#email .logo {
+    background-image: url("../assets/icons/EnvelopeSimple.svg");
+}
+
+#email:hover .logo {
+    background-image: url("../assets/icons/envelope-simple-hover.svg");
+}
+
+#git .logo {
+    background-image: url("../assets/icons/GithubLogo.svg");
+}
+
+#git:hover .logo {
+    background-image: url("../assets/icons/github-logo-hover.svg");
+}
+
+#inst .logo {
+    background-image: url("../assets/icons/InstagramLogo.svg");
+}
+
+#inst:hover .logo {
+    background-image: url("../assets/icons/instagram-logo-hover.svg");
+}
+
+#link .logo {
+    background-image: url("../assets/icons/LinkedinLogo.svg");
+}
+
+#link:hover .logo {
+    background-image: url("../assets/icons/linkedin-logo-hover.svg");
+}
+
+.arrow {
+    justify-self: end;
+}

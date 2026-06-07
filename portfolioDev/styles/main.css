@@ -1,6 +1,6 @@
 main{
     background-color: var(--gray-500);
-    
+    width: 100vw;
 }
 
 section{
