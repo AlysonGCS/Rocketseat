@@ -30,9 +30,9 @@
 
     &:hover, &:has(input:focus){
         background-color: var(--surface-secondary);
-        border: 2px dashed var(--stroke-hightlight);
+        border: 2px dashed var(--stroke-highlight);
         & svg path{
-            stroke: var(--stroke-hightlight);
+            stroke: var(--stroke-highlight);
         }
 
         & p{

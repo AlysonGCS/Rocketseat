@@ -36,14 +36,14 @@ label + .radio-wrapper{
         left: .5rem;
     }
     &:hover, &:focus-within{
-        border: 1px solid var(--stroke-hightlight);
+        border: 1px solid var(--stroke-highlight);
         & .radio-image{
             background-image: url(../../assets/Icons/radio-hover.svg);
         }
     }
 
     &:has(:checked) {
-        border: 2px solid var(--stroke-hightlight);
+        border: 2px solid var(--stroke-highlight);
 
         & .radio-image{
             background-image: url(../../assets/Icons/radio-checked.svg);
