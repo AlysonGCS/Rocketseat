@@ -36,9 +36,9 @@
     --Heading-md: 700 1.75rem/1.6 var(--Baloo2-font);
     --Heading-sm: 700 1.125rem/1.6 var(--Baloo2-font);
 
-    --Body-md: 600 1rem/1.6 var(--OpenSans-font);
-    --Body-sm: 600 0.875rem/1.6 var(--OpenSans-font);
-    --Body-xs: 600 0.75rem/1.6 var(--OpenSans-font);
+    --Body-md: 500 1rem/1.6 var(--OpenSans-font);
+    --Body-sm: 500 0.875rem/1.6 var(--OpenSans-font);
+    --Body-xs: 500 0.75rem/1.6 var(--OpenSans-font);
 
 }
 
@@ -46,4 +46,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    zoom: 60%;
+}
+
+img{
+    max-width: 100%;
 }
