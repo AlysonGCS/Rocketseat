@@ -45,37 +45,41 @@
                         <div class="flex gap16">
                             <div class="data-wrapper flex2">
                                 <label for="dt-ini-event">Início</label>
-                                <input type="datetime-local" id="dt-ini-event" name="dt-ini-event" lang="PT-BR">
+                                <input type="datetime-local" step="60" id="dt-ini-event" name="dt-ini-event" lang="PT-BR">
                             </div>
 
                             <div class="data-wrapper flex2">
                                 <label for="dt-fim-event">Fim</label>
-                                <input type="datetime-local" id="dt-fim-event" name="dt-fim-event" lang="PT-BR">
+                                <input type="datetime-local" step="60" id="dt-fim-event" name="dt-fim-event" lang="PT-BR">
                             </div>
                         </div>    
                     </div>
 
-                    <div class="input-wrapper">
-                        <label>Tipo</label>
-                        <div class="radio-group flex">
-                            <label class="type-wrapper" for="presencial">
-                                <input type="radio" name="type-conference" id="presencial" value="presencial" checked>
-                                <img class="icon-default" src="assets/icons/predio-default.svg" alt="">
-                                <img class="icon-checked" src="assets/icons/predio-checked.svg" alt="">
-                                Presencial
-                            </label>
-                        
-                            <label class="type-wrapper" for="online">
-                                <input type="radio" name="type-conference" id="online" value="online">
-                                <img class="icon-default" src="assets/icons/video-default.svg" alt="">
-                                <img class="icon-checked" src="assets/icons/video-checked.svg" alt="">
-                                Online
-                            </label>
+                    <div class="flex gap16">
+                        <div class="input-wrapper flex1">
+                            <label>Tipo</label>
+                            <div class="radio-group flex">
+                                <label class="type-wrapper" for="presencial">
+                                    <input type="radio" name="type-conference" id="presencial" value="presencial" checked>
+                                    <img class="icon-default" src="assets/icons/predio-default.svg" alt="">
+                                    <img class="icon-checked" src="assets/icons/predio-checked.svg" alt="">
+                                    <strong>Presencial</strong>
+                                </label>
+                            
+                                <label class="type-wrapper" for="online">
+                                    <input type="radio" name="type-conference" id="online" value="online">
+                                    <img class="icon-default" src="assets/icons/video-default.svg" alt="">
+                                    <img class="icon-checked" src="assets/icons/video-checked.svg" alt="">
+                                    <strong>Online</strong>
+                                </label>
+                            </div>
                         </div>
-                        <div class="text-wrapper">
-                            <label for="local">Fim</label>
-                            <input type="text" id="local" name="local" placeholder="Link ou endereço">
-                        </div>
+                        <div class="input-wrapper flex1">
+                            <div class="text-wrapper">
+                                <label for="local">Local</label>
+                                <input type="text" id="local" name="local" placeholder="Link ou endereço">
+                            </div>
+                        </div>    
                     </div>
 
                     <div class="textarea-wrapper">

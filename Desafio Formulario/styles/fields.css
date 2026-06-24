@@ -1,6 +1,5 @@
 .input-wrapper{
     display: grid;
-    gap: .75rem;
 }
 
 legend{
@@ -10,9 +9,16 @@ legend{
 input,textarea,select{
     padding: 13px 16px;
     appearance: none;
+    width: 100%;
     background-color: var(--input-base);
     color: var(--input-placeholder);
     border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+    font: var(--Body-md);
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    display: none;
 }
 
 label{
@@ -23,13 +29,13 @@ label{
 .radio-group {
     border: 1px solid var(--shape-button);
     background-color: var(--input-base);
-    padding: 4px;
-    border-radius: 8px;
-    height: 3rem;
+    flex: 2;
+    padding: .25rem;
+    border-radius: .5rem;
     width: 100%;
+    height: 3.4rem;
     max-width: 100%;
-    gap: 4px;
-    width: fit-content;
+    gap: .25rem;
 }
 
 .type-wrapper {
@@ -38,16 +44,19 @@ label{
     width: auto;
     align-items: center;
     justify-content: center;
+    gap: .5rem;
     height: 100%;
-    gap: 8px;
-    padding: 8px 16px;
-    border-radius: 6px;
+    padding: 0 16px;
+    border-radius: .5rem;
     cursor: pointer;
     color: var(--input-placeholder);
     font: var(--Body-sm);
     transition: all 0.5s;
-
-    input { display: none; }
+    
+    input { 
+        display: none;
+        width: 100%;
+    }
 
     .icon-checked { display: none; }
 

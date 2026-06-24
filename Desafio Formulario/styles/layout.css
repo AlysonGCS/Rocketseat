@@ -15,6 +15,18 @@
     border-radius: .75rem;
     align-self: left;
     padding: 5rem 8.12rem;
+
+    h1{
+        font: var(--Heading-md);
+        color: var(--shape-heading);
+    }
+}
+
+.about legend{
+    display: flex;
+    font: var(--Heading-sm);
+    color: var(--shape-heading);
+    gap: .75rem;
 }
 
 #secondary{
@@ -56,6 +68,10 @@ fieldset{
     border: none;
     display: grid;
     gap: 1rem;
+}
+
+.about{
+    margin-top: 2.6rem;
 }
 
 
