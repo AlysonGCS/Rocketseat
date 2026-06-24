@@ -30,7 +30,60 @@
         </aside>
 
         <main id="principal">
-            b
+            <h1>Crie seu convite</h1>
+
+            <form method="post">
+                <fieldset class="about">
+                    <legend><img src="assets/icons/calendar.svg" alt="Calendario"> Sobre o evento</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="title-event">Título</label>
+                        <input type="text" id="title-event" name="title-event" placeholder="Nome do evento">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <div class="flex gap16">
+                            <div class="data-wrapper flex2">
+                                <label for="dt-ini-event">Início</label>
+                                <input type="datetime-local" id="dt-ini-event" name="dt-ini-event" lang="PT-BR">
+                            </div>
+
+                            <div class="data-wrapper flex2">
+                                <label for="dt-fim-event">Fim</label>
+                                <input type="datetime-local" id="dt-fim-event" name="dt-fim-event" lang="PT-BR">
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label>Tipo</label>
+                        <div class="radio-group flex">
+                            <label class="type-wrapper" for="presencial">
+                                <input type="radio" name="type-conference" id="presencial" value="presencial" checked>
+                                <img class="icon-default" src="assets/icons/predio-default.svg" alt="">
+                                <img class="icon-checked" src="assets/icons/predio-checked.svg" alt="">
+                                Presencial
+                            </label>
+                        
+                            <label class="type-wrapper" for="online">
+                                <input type="radio" name="type-conference" id="online" value="online">
+                                <img class="icon-default" src="assets/icons/video-default.svg" alt="">
+                                <img class="icon-checked" src="assets/icons/video-checked.svg" alt="">
+                                Online
+                            </label>
+                        </div>
+                        <div class="text-wrapper">
+                            <label for="local">Fim</label>
+                            <input type="text" id="local" name="local" placeholder="Link ou endereço">
+                        </div>
+                    </div>
+
+                    <div class="textarea-wrapper">
+                        <label for="description">Descrição</label>
+                        <textarea name="description" id="description" cols="50" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                    </div>
+                </fieldset>
+            </form>
         </main>
     </div>    
 </body>

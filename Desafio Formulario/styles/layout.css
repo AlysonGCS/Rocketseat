@@ -14,17 +14,20 @@
     background-color: var(--shape-body);
     border-radius: .75rem;
     align-self: left;
+    padding: 5rem 8.12rem;
 }
 
 #secondary{
     background-image: url(../assets/Background.png);
-    margin-left: auto;
-    position: relative;
+    /*margin-left: auto;
     width: 25rem;
-    height: 45.5rem;
+    height: 45.5rem;*/
     background-size: cover;
     background-position: center;
     border-radius: .75rem;
+    position: relative;
+    height: 100%;
+    
         
     & .content-aside{
         position: absolute;
@@ -49,6 +52,11 @@
     }
 }
 
+fieldset{
+    border: none;
+    display: grid;
+    gap: 1rem;
+}
 
 
 
