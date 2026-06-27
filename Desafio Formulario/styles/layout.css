@@ -22,7 +22,7 @@
     }
 }
 
-.about legend{
+legend{
     display: flex;
     font: var(--Heading-sm);
     color: var(--shape-heading);
@@ -68,6 +68,7 @@ fieldset{
     border: none;
     display: grid;
     gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .about{
