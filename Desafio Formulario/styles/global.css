@@ -65,6 +65,10 @@ body{
     flex: 2;
 }
 
+.grid{
+    display: grid;
+}
+
 .gap16{
     gap: .75rem;
 }

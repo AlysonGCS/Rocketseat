@@ -74,3 +74,35 @@
 #cyan{
     --color: var(--cyan);
 }
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 8.37rem);
+    gap: .75rem;
+}
+.card{
+    & .card-option{
+        display: grid;
+        background-color: var(--shape-button);
+        height: 100%;
+        align-items: center;
+        justify-items: center;
+        cursor: pointer;
+        border-radius: .5rem;
+        gap: .5rem;
+        input{
+            display: none;
+        }
+        img{
+            align-self: center;
+        }
+        &:has(input:checked){
+            box-shadow: 0 0 0 2px var(--brand-light);
+        }
+        &:hover{
+            background-color: var(--shape-hover);
+        }
+    }
+
+    
+}
