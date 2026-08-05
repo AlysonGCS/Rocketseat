@@ -14,8 +14,11 @@
         margin-top: 0;
     }
 
-    & .card p{
-        margin-top: 0.25rem;
+    & .card {
+        height: 30rem;
+        & p{
+            margin-top: 0.25rem;
+        }
     }
 
     & zin-pricing{
@@ -55,7 +58,8 @@
     & .premium{
         position: relative;
         & .card{               
-            padding-top: 4.25rem;         
+            padding-top: 4.25rem; 
+            height: 35rem;        
             & > span{
                 position: absolute;
                 top: 0;
@@ -78,6 +82,7 @@
 
             }    
         }
+        
         padding: 2px;
         & ::before {
             content: "";
@@ -97,7 +102,7 @@
         & .separator{
             margin-block: 1.5rem;
         }
-    }
+    }        
 
     @media (width >= 80em){
         --fs-price: 2.5rem;
