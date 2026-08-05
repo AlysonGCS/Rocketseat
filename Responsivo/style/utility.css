@@ -1,69 +1,73 @@
-.py-base{
+.py-base {
     padding-block: var(--py-base);
 }
 
-.py-xl{
+.py-xl {
     padding-block: var(--py-xl);
 }
 
-.py-lg{
+.py-lg {
     padding-block: var(--py-lg);
 }
 
-.px-lg{
+.px-lg {
     padding-inline: var(--px-lg);
 }
 
-.desktop-only{
+.desktop-only {
     display: none;
 }
 
-.even-columns{
+.even-columns {
     display: grid;
     gap: 1rem;
 }
 
-.container{
+.container {
     --max-width: 375px;
     width: min(var(--max-width), 100% - var(--px-lg) * 2);
     /*border: 1px solid blueviolet;*/
     margin-inline: auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.grid{
+.grid {
     display: grid;
 }
 
-.itensCenter{
+.itensCenter {
     align-items: center;
 }
 
-.gap1{
+.gap1 {
     gap: 1rem;
 }
 
-.gap-1\.5{
+.gap-1\.5 {
     gap: 1.5rem;
 }
 
-.gap-2{
+.gap-1\.25 {
+    gap: 1.25rem;
+}
+
+.gap-2 {
     gap: 2rem;
 }
 
-@media (width >= 80em) {
-    .container{
+@media (width >=80em) {
+    .container {
         --max-width: 80rem;
     }
 
-    .desktop-only{
+    .desktop-only {
         display: initial;
     }
 
-    .even-columns{
+    .even-columns {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
