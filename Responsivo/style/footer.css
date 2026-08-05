@@ -1,0 +1,20 @@
+footer{
+    & span{
+        color: var(--brand-color);
+    }
+
+    & a{
+        color: var(--text-color-secondary);
+    }
+
+    & div > div > img{
+        align-self: start;
+    }
+
+    & img + div {
+        margin-left: auto;    
+        gap: 4rem;
+        
+    }
+    
+}
