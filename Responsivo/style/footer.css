@@ -1,20 +1,59 @@
-footer{
-    & span{
-        color: var(--brand-color);
-    }
-
-    & a{
-        color: var(--text-color-secondary);
-    }
-
-    & div > div > img{
-        align-self: start;
-    }
-
-    & img + div {
-        margin-left: auto;    
-        gap: 4rem;
-        
-    }
+footer{    
+    color: var(--text-color-secondary);
+    font-weight: var(--fw-md);  
     
+    & .container{
+        padding-inline: 3rem;    
+    }
+
+    &.container,
+    & .top{
+        gap: 3rem;
+    }        
+
+    & nav.even-columns{
+        gap: 4rem;
+    }
+
+    & .top ul{
+        align-content: start;
+    }
+
+    & .title{
+        color: var(--brand-color);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: .75rem;
+    }
+
+    & .bottom{
+        flex-wrap: wrap;
+
+        & > div{
+            margin-right: auto;
+        }
+
+        & span{
+            font-size: .875rem;
+        }
+    }
+
+    @media (width >= 80em){
+        & .container{
+            padding-inline: 0;
+            padding-bottom: 2rem;
+        }
+
+        & .top{
+            grid-template-columns: auto 1fr;
+            
+            & nav{
+                margin-left: auto;
+
+                & ul{
+                    width: 14rem;
+                }
+            }        
+        }
+    }
 }
