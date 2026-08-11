@@ -1,0 +1,43 @@
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.gap1{
+    gap: 1rem;
+}
+
+.container{
+    padding: 1rem;
+}
+
+img{
+    width: 20.6rem;
+    height: 20.6rem;
+    object-fit: cover;
+}
+
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.desktop-only{
+    display: none;
+}
+
+@media (width >= 80em){
+    .container{
+        padding: 2rem 1.5rem;
+    }
+    .desktop-only{
+        display: block;
+    }
+    img{
+        width: 17.87rem;
+        height: 17.87rem;
+    }
+}

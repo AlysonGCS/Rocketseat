@@ -1,0 +1,20 @@
+header{
+    padding: 1rem;
+    & .logo{
+        img{
+            width: 10.125rem;
+            height: 2rem;
+        }
+    }
+}
+
+#icon-profile{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+@media (width >= 80em){
+    header{
+        padding: 2rem 1.25rem;
+    }
+}
