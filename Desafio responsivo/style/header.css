@@ -1,20 +1,85 @@
 header{
     padding: 1rem;
+        
+    background-color: var(--surface-color);
+
     & .logo{
+        margin-right: auto;      
         img{
             width: 10.125rem;
             height: 2rem;
         }
     }
+
+    & a{
+        text-decoration: none;
+        color: var(--text-color-secondary);
+    }
+
+    & a:hover{
+        text-decoration: underline;
+        color: var(--brand-color);
+    }
+
+    & .componentes-nav{
+        align-items: center;
+    }
+
+    & .icon{
+        background: url(../assets/icons/MagnifyingGlass.svg);
+        cursor: pointer;
+    }
+
+    & .icon:hover{
+        background: url(../assets/icons/MagnifyingHover.svg);   
+    }    
 }
 
 #icon-profile{
     width: 2.5rem;
     height: 2.5rem;
+    cursor: pointer;
+}
+
+#profile{
+    & img{
+        width: 7.5rem;
+        height: 7.5rem;
+    }   
+    & div:nth-child(1){
+        display: grid;
+        grid-auto-flow: row;
+        max-width: 100%;
+        gap: .5rem;
+    }
+    
 }
 
 @media (width >= 80em){
     header{
-        padding: 2rem 1.25rem;
+        padding: 1.25rem 2rem;
+    }
+
+    #profile{
+        & img{
+            width: 11rem;
+            height: 11rem;
+        }
+        & div:nth-child(1){
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr;
+            max-width: 37rem;
+            gap: 1rem;     
+            
+            & div{
+                width: 24rem;                
+                height: 100%;
+                
+                & p{
+                    margin-top: .5rem;                    
+                }
+            }
+        }
     }
 }

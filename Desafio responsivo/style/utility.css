@@ -10,6 +10,10 @@
     gap: 1rem;
 }
 
+.gap1-2{
+    gap: .5rem;
+}
+
 .container{
     padding: 1rem;
 }
@@ -27,6 +31,10 @@ img{
 
 .desktop-only{
     display: none;
+}
+
+.itemsCenter{
+    align-items: center;
 }
 
 @media (width >= 80em){
