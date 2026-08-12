@@ -1,0 +1,30 @@
+#gallery{
+    & div{
+        display: grid;
+        grid-auto-flow: row;
+        gap: 1rem;        
+        align-content: center;
+    }
+
+    img{              
+        display: block;   
+        width: 20.5rem;
+        height: 20.5rem;        
+    }
+}
+
+@media (width >= 80em){
+    #gallery{
+        & div{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        img{
+            width: 17.87rem;
+            height: 17.87rem;
+            align-self: center;
+        }
+    }
+}
