@@ -35,10 +35,19 @@ img {
     display: block;            
 }
 
-p{
+p, a, span{
     font-family: var(--ff-primary);
     font-weight: var(--fw-regular);
     font-size: var(--fs-md);
     line-height: 1.7;
     color: var(--text-color-secondary);
+}
+
+a{
+    text-decoration: none;    
+}
+
+& a:hover{
+    text-decoration: underline;
+    color: var(--brand-color);
 }
