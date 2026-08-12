@@ -39,7 +39,7 @@ img{
 
 @media (width >= 80em){
     .container{
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 2rem;
     }
     .desktop-only{
         display: block;

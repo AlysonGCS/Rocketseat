@@ -25,12 +25,12 @@ header{
         align-items: center;
     }
 
-    & .icon{
+    & nav .icon{
         background: url(../assets/icons/MagnifyingGlass.svg);
         cursor: pointer;
     }
 
-    & .icon:hover{
+    & nav .icon:hover{
         background: url(../assets/icons/MagnifyingHover.svg);   
     }    
 }
@@ -52,6 +52,28 @@ header{
         max-width: 100%;
         gap: .5rem;
     }
+
+    & .tags{
+        margin-top: 2rem;
+        width: 17.5rem;
+    }
+
+    & ul{
+        display: grid;
+        gap: 1rem;        
+        & li{            
+            list-style: none; 
+            display: flex;          
+            align-items: center; 
+            color: var(--text-color-secondary); 
+                   
+            & img{
+                margin-right: .5rem;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
     
 }
 
@@ -61,6 +83,8 @@ header{
     }
 
     #profile{
+        display: flex;
+        justify-content: space-between;
         & img{
             width: 11rem;
             height: 11rem;
