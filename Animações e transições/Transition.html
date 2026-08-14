@@ -1,0 +1,32 @@
+<style>
+    body{
+      background-color: purple;
+    }
+    div{
+      background-color: white;
+      width: 4rem;
+      height: 4rem;
+      opacity: .6;
+      
+      /*transition-property: opacity,transform;
+      transition-duration: 2s;
+      transition-delay: 1s, 1s
+      transition-timing-function: cubic-bezier(0.95, 0.01, 0,0);*/
+  
+      transition: opacity 1s ease, transform 900ms linear;
+    }
+  
+    div:hover{
+      opacity: 1; 
+      transform: translateX(30px) translateY(20px) ; 
+    }
+  
+    @media (prefers-reduced-motion){
+      div{
+        transition: none;
+      }
+    }
+  </style>
+  <div>
+  
+  </div>

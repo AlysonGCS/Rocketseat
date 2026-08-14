@@ -1,0 +1,50 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --snitap-sun: #FFCD1E;        
+    --snitap-sky-mid: #06B6D4;
+    --snitap-sky-light: #67E8F9;
+    --snitap-joy-mid: #DB2777;
+    --snitap-joy-light: #F472B6;
+    --snitap-leaf-mid: #16A34A;
+
+    --text: #000000;
+    --highlights: #000000;
+    --background: #FAFAFA;
+
+    --ff-syne: 'Syne', sans-serif;
+    --ff-montserrat: 'Montserrat', sans-serif;    
+}
+
+html, button{
+    font: 500;
+    font-size: 1rem;
+    line-height: 1.5;    
+    font-family: var(--ff-montserrat);
+}
+
+span{
+    font: 500;
+    font-size: 0.875rem;
+    line-height: 1.5;    
+    font-family: var(--ff-montserrat);
+}
+
+h1,h2{
+    font-family: var(--ff-syne);
+    font: 700;    
+}
+
+h1{
+    line-height: 1.25;
+    font-size: 4rem;
+}
+
+h2{
+    line-height: 1.2;
+    font-size: 2.5rem;
+}

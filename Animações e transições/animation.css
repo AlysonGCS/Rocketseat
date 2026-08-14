@@ -1,0 +1,53 @@
+button{
+    /*transform: translateY(300px);  
+    animation-name: movee;
+    animation-duration: 1s;
+    animation-delay: 1s;  
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    /*animation-fill-mode: forwards;*/
+  
+    /*animation-direction: alternate;*/
+    animation: movee 1s .5s both infinite alternate ease, fade 0.5s both 10;
+  }
+  
+  button:hover{
+    animation-play-state: paused;
+  }
+  
+  @keyframes movee{
+    /*from{
+      transform: translateY(0);
+    }*/
+    /*to{
+      transform: translateY(300px);
+    }
+    50%{
+      transform: translateY(100px);
+    }*/
+  
+    /*0%,50%{
+      transform: translateY(0px);
+    }
+  
+    25%,75%,100%{
+      transform: translateY(300px);
+    }*/
+  
+    0% {
+      background-color: red;
+    }
+  
+    100%{
+      transform: translateY(500px);
+      background-color: yellow;
+      color: black;
+    }
+  
+  }
+  
+  @keyframes fade {
+    50%{
+      opacity: 0;
+    }
+  }
