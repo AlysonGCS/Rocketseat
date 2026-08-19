@@ -1,0 +1,213 @@
+#hero{
+    max-width: 80rem;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    margin-inline: auto;
+    display: flex;
+
+    & h1 div {
+        display: inline-block;
+        overflow: hidden;
+        height: 5rem;
+        width: min-content;
+        vertical-align: bottom; 
+        
+    }
+
+    & h1 span:nth-child(1),
+    & h1 span:nth-child(4){
+        color: var(--snitap-sky-mid);
+    }
+    & h1 span:nth-child(2){
+        color: var(--snitap-joy-mid);
+    }
+    & h1 span:nth-child(3){
+        color: var(--snitap-leaf-mid);
+    }
+
+    & h1 span{
+        display: block;
+
+        animation: slideUp 6s infinite;
+    } 
+    
+    & .buttons{
+        display: flex;
+        gap: 2rem;
+        margin-top: 3rem;        
+        
+        & .button{
+            display: flex;   
+            align-items: center;            
+            gap: .75rem;
+            border-radius: 5rem; 
+            transition: scale 300ms;           
+            
+            &.buy{
+                padding: 1.5rem 3rem;                
+                background-color: var(--snitap-sun);
+                box-shadow: 0px 36px 15px rgba(0, 0, 0, 0.01), 
+                            0px 20px 12px rgba(0, 0, 0, 0.05), 
+                            0px 9px 9px rgba(0, 0, 0, 0.09), 
+                            0px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            &.play span{
+                padding: 1.5rem;
+                display: flex;
+                background-color: white;
+                border-radius: 5rem;                
+                box-shadow: 0px 36px 15px rgba(0, 0, 0, 0.01), 0px 20px 12px rgba(0, 0, 0, 0.05), 0px 9px 9px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        & .button:hover{
+            scale: 1.1;
+        }
+    }
+    & #left{
+        width: 43.5rem;
+        height: 17.56rem;        
+    }
+
+    & #animationRight{
+        width: 30.5rem;
+        height: 30.5rem;
+        position: relative;
+        & img{
+            position: absolute;
+        }
+
+        & img:nth-child(1){
+            left: 90rem;
+            animation: slideBack 3s both; 
+        }
+
+        & img:nth-child(2){
+            left: 90rem;
+            width: 30.5rem;
+            height: 28.87rem;
+            top: .812rem;
+            animation: slidePatinet 3s both;
+        }
+
+        & img:nth-child(3){
+            width: 5.5rem;
+            height: 4.5rem;                        
+            top: 9.492rem;
+            left: 90rem;
+            animation: slideStar1 3s both;
+        }
+
+        & img:nth-child(4){  
+            left: calc(90rem + 27.875rem);                     
+            top: 16.875rem; 
+            animation: slideStar2 3s both;            
+        }
+    }
+}
+
+@keyframes slideUp {
+    0%, 22%{
+        transform: translateY(0);
+    }
+
+    25%{
+        transform: translateY(calc(-5rem - 20px));
+    }
+    27%{
+        transform: translateY(calc(-5rem + 16px));
+    }
+    29%{
+        transform: translateY(calc(-5rem - 10px));
+    }
+    31%{
+        transform: translateY(calc(-5rem + 5px));
+    }
+
+    32%{
+        transform: translateY(calc(-5rem - 3px));
+    }
+
+    33%, 55%{
+        transform: translateY(-5rem);
+    }
+
+    58%{
+        transform: translateY(calc(-10rem - 20px));
+    }
+    60%{
+        transform: translateY(calc(-10rem + 16px));
+    }
+    62%{
+        transform: translateY(calc(-10rem - 10px));
+    }
+    64%{
+        transform: translateY(calc(-10rem + 5px));
+    }
+
+    65%{
+        transform: translateY(calc(-10rem - 3px));
+    }
+
+    66%, 88%{
+        transform: translateY(-10rem);
+    }
+
+    90%{
+        transform: translateY(calc(-15rem - 20px));
+    }
+    92%{
+        transform: translateY(calc(-15rem + 16px));
+    }
+    94%{
+        transform: translateY(calc(-15rem - 10px));
+    }
+    96%{
+        transform: translateY(calc(-15rem + 5px));
+    }
+
+    97%{
+        transform: translateY(calc(-15rem - 3px));
+    }
+
+    100%{
+        transform: translateY(-15rem);    
+    }
+}
+
+@keyframes slidePatinet{
+    40%{
+        left: -2rem;    
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes slideBack{
+    60%{
+        left: -1rem;    
+    }
+    100%{
+        left: .812rem;
+    }
+}
+
+@keyframes slideStar1{
+    50%{
+        left: -1rem;    
+    }
+    100%{
+        top: 9.492rem;
+        left: .5rem;
+    }
+}
+
+@keyframes slideStar2{
+    60%{
+        left: 26.875rem;    
+    }
+    100%{
+        left: 27.875rem;
+    }
+}

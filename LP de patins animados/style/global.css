@@ -25,14 +25,16 @@ html, button{
     font-size: 1rem;
     line-height: 1.5;    
     font-family: var(--ff-montserrat);
+    background-color: var(--background);
+    overflow-x: hidden;
 }
 
-span{
+/*span{
     font: 500;
     font-size: 0.875rem;
     line-height: 1.5;    
     font-family: var(--ff-montserrat);
-}
+}*/
 
 h1,h2{
     font-family: var(--ff-syne);
