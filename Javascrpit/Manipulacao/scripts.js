@@ -26,3 +26,15 @@ guests.prepend(newGuest)
 guests.append(newGuest)
 
 newGuest.classList.add("guest")
+
+
+//input.setAttribute("disabled", true)
+//input.setAttribute("type", "file")
+
+window.addEventListener("load", () => {
+    console.log("A página foi carregada!")
+})
+
+addEventListener("click", (ev) => {
+    console.log(ev)
+})
